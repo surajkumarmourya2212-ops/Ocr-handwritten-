@@ -121,6 +121,7 @@ with tab_text:
 
 st.divider()
 st.caption(
-    "Digit model: scikit-learn MLP trained on real handwritten digit scans (96.7% test accuracy). "
-    "Text mode uses the trained CRNN if models/crnn_model.h5 is present, otherwise falls back to Tesseract OCR."
+    "Digit model: MNIST CNN for handwritten digit recognition. "
+    "Text mode uses the trained CRNN when available; "
+    "otherwise Tesseract is used as a fallback."
 )
