@@ -9,7 +9,7 @@ streamlit-drawable-canvas==0.9.3
 
 # ---- Image processing ----
 opencv-python-headless==4.13.0.92
-Pillow==12.1.1
+Pillow>=9.1,<11
 numpy>=1.26
 
 # ---- Deployed digit-recognition model (always used) ----
