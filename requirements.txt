@@ -1,34 +1,7 @@
-# ---- Web app framework(s) ----
-# Flask   -> used by app.py            (Render / Railway / PythonAnywhere / Docker)
-# Streamlit + streamlit-drawable-canvas -> used by streamlit_app.py (Streamlit Community Cloud)
-# It's harmless to install both — pick whichever front-end you're deploying.
-Flask==3.1.3
-Werkzeug>=3.0
-streamlit==1.39.0
-streamlit-drawable-canvas==0.9.3
-
-# ---- Image processing ----
-opencv-python-headless==4.13.0.92
-Pillow>=9.1,<11
-numpy>=1.26
-
-# ---- Deployed digit-recognition model (always used) ----
-scikit-learn==1.8.0
-joblib>=1.3
-
-# ---- Optional: full word/sentence-level OCR fallback ----
-# Requires the Tesseract binary to be installed on the host OS as well:
-#   Ubuntu/Debian: sudo apt-get install tesseract-ocr
-#   macOS:         brew install tesseract
-#   Windows:       https://github.com/UB-Mannheim/tesseract/wiki
-pytesseract==0.3.13
-
-# ---- Optional: production CRNN + CTC model (models/crnn_model.h5) ----
-# Only needed if you have trained handwritten_ocr.py on the IAM dataset
-# and placed the resulting weights at models/crnn_model.h5. Uncomment to
-# enable full word-level deep-learning recognition instead of the
-# Tesseract fallback:
-# tensorflow==2.16.1
-
-# ---- Production WSGI server (recommended over `python app.py`) ----
-gunicorn==23.0.0
+streamlit
+tensorflow
+numpy
+opencv-python-headless
+pillow
+pytesseract
+streamlit-drawable-canvas
